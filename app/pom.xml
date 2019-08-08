@@ -44,9 +44,9 @@
 				<version>1.0.0</version>
 				<configuration>
 					<imageName>${project.name}:${project.version}</imageName>
-					<!--<baseImage>java</baseImage>-->
-					<!--<entryPoint>["java","-jar","/${project.build.finalName}.jar}"]</entryPoint>-->
-					<dockerDirectory>${project.basedir}/src/main/docker</dockerDirectory>
+					<baseImage>java:8</baseImage>
+					<entryPoint>["java","-jar","/${project.build.finalName}.jar}"]</entryPoint>
+					<!--<dockerDirectory>${project.basedir}/src/main/docker</dockerDirectory>-->
 					<dockerHost>http://49.234.188.74:2375</dockerHost>
 					<resources>
 						<resource>
